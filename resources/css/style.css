@@ -1,0 +1,273 @@
+/* Universal Styles */
+
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: White;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen AND (min-width:960px) {
+  .container {
+    width: 960px;
+  }
+
+}
+
+/* Header */
+header {
+  background-color: cadetblue;
+  position: fixed;
+  z-index: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+  box-sizing: border-box;
+}
+
+header img, footer img {
+  height: 1.5rem;
+  width: auto;
+}
+
+nav .mobile {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  padding-left: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 200;
+  height: 30rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+
+}
+
+.hero h1 {
+  background-color: white;
+  position: relative;
+  z-index: 0;
+  top: 10rem;
+  padding: 1.5rem 5rem;
+  right: -15rem;
+  height: 6rem;
+  box-sizing: border-box;
+}
+
+
+/* Feature Section */
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.indiv-feature {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 4rem;
+}
+
+.indiv-feature img{
+  width: 5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.indiv-feature.one img{
+  width: 3.5rem;
+}
+
+/* Bottom Container */
+  .bottom-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .bottom-containers h3 {
+    width: 10rem;
+  }
+  .philo, .appointments {
+    width: 35%;
+  }
+
+  .philo {
+    margin-right: 5%;
+  }
+/* Footer */
+footer {
+  background-color: azure;
+  width: 100%;
+}
+
+footer img {
+  margin: 4rem 0rem 4rem 4rem;
+}
+
+
+/* Mobile Styles */
+@media only screen AND (max-width: 700px) {
+
+    /* Universal */
+    body {
+      width: 100%;
+    }
+
+    p {
+      font-size: 0.77rem;
+      width: 90%;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+    }
+
+    nav {
+      justify-content: flex-end;
+    }
+
+    nav .desktop {
+      display: none;
+    }
+
+    nav .mobile {
+      display: inline;
+    }
+
+    .logo span {
+      display: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 20rem;
+      background-position: left;
+      display: block;
+    }
+
+    .hero h1 {
+      font-size: 1rem;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      z-index: 0;
+      top: 15rem;
+      height: 3rem;
+      right: 0;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      flex-direction: column;
+      margin: 3.77rem;
+      align-items: center;
+    }
+
+    .indiv-feature {
+      margin: 0rem;
+    }
+
+    .indiv-feature.two {
+      margin: 1.54rem auto;
+    }
+
+    /* Philosophy */
+    .bottom-containers {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .philo, .appointments {
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .bottom-containers h3 {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      display: flex;
+      justify-content: center;
+    }
+}
+
+/* Tablet Styles */
+@media only screen AND (min-width: 701px) AND (max-width: 960px){
+
+    /* Header */
+    header {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Hero */
+    .hero {
+      height: 22rem;
+      display: flex;
+      justify-content: flex-end;
+
+    }
+
+    .hero h1 {
+      position: relative;
+      right: 0;
+      z-index: 0;
+      top: 10rem;
+      padding: 1.5rem 4rem;
+      margin-right: 2rem;
+      height: 5rem;
+      font-size: 1.33rem;
+    }
+}
